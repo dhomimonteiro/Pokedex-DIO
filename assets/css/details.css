@@ -1,0 +1,186 @@
+.cardDetail{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+.cardDetail > #card{
+    height: auto;
+    max-height: 640px;
+    border-radius: 1rem;
+    padding: 0;
+    width: 380px;
+    cursor: default;
+
+    /*shadow*/
+    -webkit-box-shadow: 10px 10px 29px -10px rgba(67,71,77,1);
+    -moz-box-shadow: 10px 10px 29px -10px rgba(67,71,77,1);
+    box-shadow: 10px 20px 29px -10px rgba(67,71,77,1);
+}
+
+.cardDetail > #card > #closeButton {
+    color: #fff;
+    font-size: 1rem;
+    align-self: flex-start;
+    margin: 1rem;
+    cursor: pointer;
+}
+.cardDetail > #card > #closeButton:hover {
+    color: rgb(80, 80, 82);
+    transition: .2s;
+}
+
+.cardDetail > #card:hover{
+    transform: none;
+}
+
+.cardDetail > #card > .top-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardDetail > #card > .top-content > .numberCard {
+    color: #fff;
+    opacity: .9;
+}
+
+.cardDetail > #card > .top-content > .name, .numberCard {
+    margin-top: .25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.cardDetail > #card > .types {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardDetail > #card > .types > .type {
+    color: #f4f4f5;
+    margin-right: .25rem;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 25px;
+    filter: brightness(1.1);
+}
+
+.cardDetail > #card > img {
+    max-width: 150px;
+    height: 150px;
+    max-height: 150px;
+    align-self: center;
+}
+
+.cardDetail > .pokemon > .details{
+    background-color: #eeeeee;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 1rem;
+
+    overflow-y: scroll;
+}
+
+.details::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+.details::-webkit-scrollbar-thumb{
+    background-color: #b6b2b2;
+    border-radius: 25px;
+}
+
+.cardDetail > .pokemon > .details > .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.cardDetail > .pokemon > .details > .buttons > .tablink{
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: auto;
+    transition: .2s;
+}
+
+.cardDetail > .pokemon > .details > .buttons >.tablink:hover{
+    background-color: #999dbd;
+    transition: .2s;
+}
+
+.cardDetail > .pokemon > .details > #about > .info {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-left: 1rem;
+}
+.cardDetail > .pokemon > .details > #about > .info > p{
+    padding: 0 1rem;
+    font-size: .9rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.cardDetail > .pokemon > .details > .tabcontent > .info >.infoName{
+    font-size: .8rem;
+    font-weight: 300;
+    color: #707070;
+}
+
+.cardDetail > .pokemon > .details > #stats > .info  {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-transform: capitalize;
+}
+.cardDetail > .pokemon > .details > .tabcontent > .info > .skill-bar {
+    background-color: #cfcfcf; 
+    margin: .5rem;
+    height: 10px;
+    width: 100%; 
+    border-radius: 25px;
+}
+
+.cardDetail > .pokemon > .details > .tabcontent > .info > .skill-bar > .skill {
+    background-color: rgb(230, 105, 116);
+    height: 100%;
+    border-radius: 25px;
+}
+
+.cardDetail > .pokemon > .details > #moves {
+    width: 100%;
+}
+
+.cardDetail > .pokemon > .details > #moves > .info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: .25rem 1rem;
+    padding: 0 2rem;
+}
+
+.cardDetail > .pokemon > .details > #moves > .info > .move {
+    font-size: .8rem;
+    font-weight: 300;
+    color: #707070;
+    text-transform: capitalize;
+}
