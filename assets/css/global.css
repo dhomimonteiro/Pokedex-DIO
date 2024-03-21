@@ -3,17 +3,33 @@
     box-sizing: border-box;
 }
 .content {
-    padding: 1rem;
+    width: 100%;
 }
-.content h1{
-    color: rgb(56, 55, 61);
+.pokemonLogoContent {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: #a9bbe0;
+}
+.content .pokemonLogo{
+    height: 100px;
+}
+.content .pokemons {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
     .content {
-        max-width: 992px;
+        max-width: 100%;
         margin: 0 auto;
     }
+    
     
 }
 
